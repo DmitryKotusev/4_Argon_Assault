@@ -18,6 +18,21 @@ public class Player : MonoBehaviour
     [SerializeField]
     float yRange = 3f;
 
+    [SerializeField]
+    float positionPitchFactor = -5f;
+
+    [SerializeField]
+    float positionYawFactor = 6f;
+
+    [SerializeField]
+    float controlPitchFactor = -20f;
+
+    [SerializeField]
+    float controlYawFactor = -20f;
+
+    float xThrow;
+    float yThrow;
+
     void Update()
     {
         HandleXInput();
@@ -27,7 +42,7 @@ public class Player : MonoBehaviour
 
     private void HandleXInput()
     {
-        float xThrow = CrossPlatformInputManager.GetAxis("Horizontal");
+        xThrow = CrossPlatformInputManager.GetAxis("Horizontal");
         float xOffsetThisFrame = xSpeed * xThrow * Time.deltaTime;
 
         transform.localPosition = new Vector3(
@@ -39,7 +54,7 @@ public class Player : MonoBehaviour
 
     private void HandleYInput()
     {
-        float yThrow = CrossPlatformInputManager.GetAxis("Vertical");
+        yThrow = CrossPlatformInputManager.GetAxis("Vertical");
         float yOffsetThisFrame = ySpeed * yThrow * Time.deltaTime;
 
         transform.localPosition = new Vector3(
@@ -51,6 +66,11 @@ public class Player : MonoBehaviour
 
     private void HandleRotation()
     {
+        float pitch =
+            transform.localPosition.y * positionPitchFactor + yThrow * controlPitchFactor;
+        float yaw = transform.localPosition.x * positionYawFactor;
+        float roll = xThrow * controlYawFactor;
 
+        transform.localRotation = Quaternion.Euler(pitch, yaw, roll);
     }
 }
