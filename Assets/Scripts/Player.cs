@@ -73,4 +73,9 @@ public class Player : MonoBehaviour
 
         transform.localRotation = Quaternion.Euler(pitch, yaw, roll);
     }
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        Debug.Log("Player hit smth");
+    }
 }
