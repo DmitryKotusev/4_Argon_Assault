@@ -76,6 +76,11 @@ public class Player : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        Debug.Log("Player hit smth");
+        Debug.Log("Player collide smth");
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        Debug.Log("Player trigger smth");
     }
 }
