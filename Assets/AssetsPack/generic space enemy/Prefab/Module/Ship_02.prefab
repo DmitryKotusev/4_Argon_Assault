@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 4354848751893472}
   - component: {fileID: 33219907115598346}
   - component: {fileID: 23021765208169616}
+  - component: {fileID: -193212526623753956}
   - component: {fileID: 8756363420017855358}
   m_Layer: 0
   m_Name: Ship_02
@@ -78,6 +79,18 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!114 &-193212526623753956
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1238095480485456}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ad2f5f91f2a42314794f81c6f1bb1b09, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!65 &8756363420017855358
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -86,7 +99,7 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1238095480485456}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 0.6627084, y: 0.48463184, z: 0.1403246}
