@@ -1510,6 +1510,11 @@ PrefabInstance:
       propertyPath: CollisionModule.minKillSpeed
       value: 1000
       objectReference: {fileID: 0}
+    - target: {fileID: 5139292614862667639, guid: c1a42c8d2e1d32441b24773d34195211,
+        type: 3}
+      propertyPath: CollisionModule.collisionMessages
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8162595813736050863, guid: c1a42c8d2e1d32441b24773d34195211,
         type: 3}
       propertyPath: m_Name
@@ -1529,6 +1534,11 @@ PrefabInstance:
         type: 3}
       propertyPath: CollisionModule.minKillSpeed
       value: 1000
+      objectReference: {fileID: 0}
+    - target: {fileID: 8162595813736050848, guid: c1a42c8d2e1d32441b24773d34195211,
+        type: 3}
+      propertyPath: CollisionModule.collisionMessages
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8162595814778829356, guid: c1a42c8d2e1d32441b24773d34195211,
         type: 3}
@@ -1550,6 +1560,11 @@ PrefabInstance:
       propertyPath: CollisionModule.minKillSpeed
       value: 1000
       objectReference: {fileID: 0}
+    - target: {fileID: 8162595814778829347, guid: c1a42c8d2e1d32441b24773d34195211,
+        type: 3}
+      propertyPath: CollisionModule.collisionMessages
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8162595813778980667, guid: c1a42c8d2e1d32441b24773d34195211,
         type: 3}
       propertyPath: m_Name
@@ -1569,6 +1584,11 @@ PrefabInstance:
         type: 3}
       propertyPath: CollisionModule.minKillSpeed
       value: 1000
+      objectReference: {fileID: 0}
+    - target: {fileID: 8162595813778980660, guid: c1a42c8d2e1d32441b24773d34195211,
+        type: 3}
+      propertyPath: CollisionModule.collisionMessages
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c1a42c8d2e1d32441b24773d34195211, type: 3}
