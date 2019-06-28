@@ -1,10 +1,12 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityStandardAssets.CrossPlatformInput;
 
-public class Player : MonoBehaviour
+public class PlayerController : MonoBehaviour
 {
+    [Header("General")]
     [Tooltip("In ms^-1")]
     [SerializeField]
     float xSpeed = 4f;
@@ -18,26 +20,31 @@ public class Player : MonoBehaviour
     [SerializeField]
     float yRange = 3f;
 
+    [Header("Screen-position based")]
     [SerializeField]
     float positionPitchFactor = -5f;
-
     [SerializeField]
     float positionYawFactor = 6f;
 
+    [Header("Control-throw based")]
     [SerializeField]
     float controlPitchFactor = -20f;
-
     [SerializeField]
     float controlYawFactor = -20f;
 
     float xThrow;
     float yThrow;
 
+    bool isControlEnabled = true;
+
     void Update()
     {
-        HandleXInput();
-        HandleYInput();
-        HandleRotation();
+        if (isControlEnabled)
+        {
+            HandleXInput();
+            HandleYInput();
+            HandleRotation();
+        }
     }
 
     private void HandleXInput()
@@ -74,13 +81,8 @@ public class Player : MonoBehaviour
         transform.localRotation = Quaternion.Euler(pitch, yaw, roll);
     }
 
-    private void OnCollisionEnter(Collision collision)
+    private void OnPlayerDeath()
     {
-        Debug.Log("Player collide smth");
-    }
-
-    private void OnTriggerEnter(Collider other)
-    {
-        Debug.Log("Player trigger smth");
+        isControlEnabled = false;
     }
 }
