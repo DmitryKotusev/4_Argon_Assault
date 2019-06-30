@@ -801,6 +801,12 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 816369248}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &819275453 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8162595813778980667, guid: c1a42c8d2e1d32441b24773d34195211,
+    type: 3}
+  m_PrefabInstance: {fileID: 5139292613096428574}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &891474586
 GameObject:
   m_ObjectHideFlags: 0
@@ -1106,6 +1112,12 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 177798724}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1048966646 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8162595813736050863, guid: c1a42c8d2e1d32441b24773d34195211,
+    type: 3}
+  m_PrefabInstance: {fileID: 5139292613096428574}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1076189788
 GameObject:
   m_ObjectHideFlags: 0
@@ -1196,6 +1208,12 @@ Transform:
   m_Father: {fileID: 668602284}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1558870724 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5139292614862667640, guid: c1a42c8d2e1d32441b24773d34195211,
+    type: 3}
+  m_PrefabInstance: {fileID: 5139292613096428574}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1608557510
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1258,6 +1276,12 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4192681528727280, guid: 6a7580c2fbbc4fe41947b58d9f7d3f2b,
     type: 3}
   m_PrefabInstance: {fileID: 1608557510}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1613950439 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8162595814778829356, guid: c1a42c8d2e1d32441b24773d34195211,
+    type: 3}
+  m_PrefabInstance: {fileID: 5139292613096428574}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1722303502
 GameObject:
@@ -1461,7 +1485,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 48797de86586a5548bef5f9c63400025, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scorePerHit: 10
 --- !u!1 &1923843186
 GameObject:
   m_ObjectHideFlags: 0
@@ -1751,7 +1774,7 @@ PrefabInstance:
     - target: {fileID: 5139292614862667640, guid: c1a42c8d2e1d32441b24773d34195211,
         type: 3}
       propertyPath: m_Name
-      value: FarBulletsRight
+      value: FarGunRight
       objectReference: {fileID: 0}
     - target: {fileID: 5139292614862667639, guid: c1a42c8d2e1d32441b24773d34195211,
         type: 3}
@@ -1776,7 +1799,7 @@ PrefabInstance:
     - target: {fileID: 8162595813736050863, guid: c1a42c8d2e1d32441b24773d34195211,
         type: 3}
       propertyPath: m_Name
-      value: FarBulletsLeft
+      value: FarGunLeft
       objectReference: {fileID: 0}
     - target: {fileID: 8162595813736050848, guid: c1a42c8d2e1d32441b24773d34195211,
         type: 3}
@@ -1801,7 +1824,7 @@ PrefabInstance:
     - target: {fileID: 8162595814778829356, guid: c1a42c8d2e1d32441b24773d34195211,
         type: 3}
       propertyPath: m_Name
-      value: CloseBulletsRight
+      value: CloseGunRight
       objectReference: {fileID: 0}
     - target: {fileID: 8162595814778829347, guid: c1a42c8d2e1d32441b24773d34195211,
         type: 3}
@@ -1826,7 +1849,7 @@ PrefabInstance:
     - target: {fileID: 8162595813778980667, guid: c1a42c8d2e1d32441b24773d34195211,
         type: 3}
       propertyPath: m_Name
-      value: CloseBulletsLeft
+      value: CloseGunLeft
       objectReference: {fileID: 0}
     - target: {fileID: 8162595813778980660, guid: c1a42c8d2e1d32441b24773d34195211,
         type: 3}
@@ -1848,6 +1871,31 @@ PrefabInstance:
       propertyPath: CollisionModule.collisionMessages
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 5139292613096428577, guid: c1a42c8d2e1d32441b24773d34195211,
+        type: 3}
+      propertyPath: guns.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 5139292613096428577, guid: c1a42c8d2e1d32441b24773d34195211,
+        type: 3}
+      propertyPath: guns.Array.data[0]
+      value: 
+      objectReference: {fileID: 1558870724}
+    - target: {fileID: 5139292613096428577, guid: c1a42c8d2e1d32441b24773d34195211,
+        type: 3}
+      propertyPath: guns.Array.data[1]
+      value: 
+      objectReference: {fileID: 1048966646}
+    - target: {fileID: 5139292613096428577, guid: c1a42c8d2e1d32441b24773d34195211,
+        type: 3}
+      propertyPath: guns.Array.data[2]
+      value: 
+      objectReference: {fileID: 1613950439}
+    - target: {fileID: 5139292613096428577, guid: c1a42c8d2e1d32441b24773d34195211,
+        type: 3}
+      propertyPath: guns.Array.data[3]
+      value: 
+      objectReference: {fileID: 819275453}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c1a42c8d2e1d32441b24773d34195211, type: 3}
 --- !u!4 &5139292613096428575 stripped
