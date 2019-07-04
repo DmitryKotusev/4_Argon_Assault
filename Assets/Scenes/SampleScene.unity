@@ -658,7 +658,7 @@ Animator:
   m_Controller: {fileID: 0}
   m_CullingMode: 0
   m_UpdateMode: 0
-  m_ApplyRootMotion: 1
+  m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
@@ -679,7 +679,7 @@ PlayableDirector:
   m_DirectorUpdateMode: 1
   m_InitialTime: 0
   m_SceneBindings:
-  - key: {fileID: 8087073545598950317, guid: 7a568e79f5c46d8499f4b15c497e6a1c, type: 2}
+  - key: {fileID: -6416968300226236956, guid: 7a568e79f5c46d8499f4b15c497e6a1c, type: 2}
     value: {fileID: 472787286}
   m_ExposedReferences:
     m_References: []
